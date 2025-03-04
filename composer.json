@@ -1,0 +1,29 @@
+{
+    "name": "muhammad/company-email-validator",
+    "description": "A fast and efficient company/work email validator that checks if an email domain belongs to a free email provider.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Muhammad\\CompanyEmailValidator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Muhammad Yahaya",
+            "email": "adelekeyahaya05@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "3.x-dev"
+    }
+}
