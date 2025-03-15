@@ -41,11 +41,17 @@ class EmailValidator
     public function areCompanyEmails(array $emails): array
     {
         $results = [];
-
+    
         foreach ($emails as $email) {
+            if (!$this->validate($email)) {
+                $results[$email] = false; // Invalid email format
+                continue;
+            }
+    
             $results[$email] = $this->isCompanyEmail($email);
         }
-
+    
         return $results;
     }
+    
 }
